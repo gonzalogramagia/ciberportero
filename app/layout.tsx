@@ -17,10 +17,11 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Gonzalo Gramaglia | Ciberportero',
-    template: '%s | Ciberportero'
+    default: 'Ciberportero',
+    template: '%s | Ciberportero',
   },
-  description: 'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:
+    'Ciberportero is the personal portfolio of Gonzalo Gramagia, an IT professional transitioning into Cybersecurity. Showcasing projects, work experience, and insights on web development and security.',
 };
 
 const geist = Geist({
