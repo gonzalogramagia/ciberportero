@@ -231,6 +231,8 @@ export default function Personal() {
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
+        id="work"
+        className="scroll-mt-24"
       >
         <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
         <div className="flex flex-col space-y-2">
@@ -267,6 +269,8 @@ export default function Personal() {
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
+        id="blog"
+        className="scroll-mt-24"
       >
         <h3 className="mb-3 text-lg font-medium">Blog</h3>
         <div className="flex flex-col space-y-0">
