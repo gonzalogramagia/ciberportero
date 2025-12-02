@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Alianza La Libertad Avanza Córdoba',
-    description: '',
+    description: 'Website for LLA admins and editors to publish resolutions and statements. Built with Nuxt 3, Tailwind CSS, and Nuxt Content.',
     link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
     youtube:
       'qX0PC89YqlY',
@@ -54,7 +54,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Full Stack Web Developer',
     start: '2024',
     end: '2025',
-    link: 'https://ibelick.com',
+    link: '/work/full-stack-web-developer',
     id: 'work1',
   },
   {
@@ -62,7 +62,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Help Desk Specialist',
     start: '2023',
     end: '2024',
-    link: 'https://ibelick.com',
+    link: '/work/help-desk-specialist',
     id: 'work2',
   },
   {
@@ -70,7 +70,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Video and Podcast Editor',
     start: '2022',
     end: '2023',
-    link: 'https://ibelick.com',
+    link: '/work/video-and-podcast-editor',
     id: 'work3',
   },
 ]
