@@ -67,10 +67,10 @@ export const PROJECTS: Project[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Catsule Corp',
-    title: 'Full Stack Web Developer',
+    title: 'Full Stack Developer',
     start: '2024',
     end: 'Present',
-    link: '/work/full-stack-web-developer',
+    link: '/work/full-stack-developer',
     id: 'work1',
   },
   {
@@ -81,40 +81,48 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: '/work/help-desk-specialist',
     id: 'work2',
   },
-  {
-    company: 'Molecule Protocol',
-    title: 'Video and Podcast Editor',
-    start: '2022',
-    end: '2023',
-    link: '/work/video-and-podcast-editor',
-    id: 'work3',
-  },
 ]
 
 export const EDUCATION: WorkExperience[] = [
   {
     company: 'Universidad de la Defensa Nacional',
     title: 'Cyberdefense',
-    start: '2025',
+    start: '2026',
     end: 'Present',
-    link: '/education/cyberdefense',
+    link: 'https://undef.edu.ar/fadena/carreras-de-grado/licciberdefensa/',
     id: 'edu1',
   },
   {
     company: 'Universidad Nacional de Córdoba',
     title: 'Computer Science',
-    start: '2024',
+    start: '2025',
     end: '2025',
-    link: '/education/computer-science',
+    link: 'https://www.famaf.unc.edu.ar/academica/grado/licenciatura-en-ciencias-de-la-computaci%C3%B3n/',
     id: 'edu2',
+  },
+  {
+    company: 'Boot.dev',
+    title: 'Backend Development',
+    start: '2024',
+    end: '2024',
+    link: 'https://boot.dev',
+    id: 'edu3',
+  },
+  {
+    company: 'Scrimba.com',
+    title: 'Frontend Development',
+    start: '2024',
+    end: '2024',
+    link: 'https://scrimba.com/home',
+    id: 'edu4',
   },
   {
     company: 'Professional Google Career Certificates',
     title: 'IT Support & Cybersecurity',
     start: '2022',
     end: '2023',
-    link: '/education/it-support-and-cybersecurity',
-    id: 'edu3',
+    link: 'https://grow.google/certificates/',
+    id: 'edu5',
   },
 ]
 
