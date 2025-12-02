@@ -35,7 +35,7 @@ export const PROJECTS: Project[] = [
     description:
       'Web app for UNC students to track workouts with personalized routines and social features. Built with Go, React, and Supabase.',
     link: 'https://entrenar.app/',
-    image: '/Entrenar.app.png',
+    image: '/entrenar-app.png',
     id: 'project1',
   },
   {
@@ -46,6 +46,22 @@ export const PROJECTS: Project[] = [
       'qX0PC89YqlY',
     id: 'project2',
   },
+  {
+    name: 'Moovimiento.com',
+    description:
+      'Modern landing page for a custom nut mix business featuring checkout integration. Built with Next.js 14, TypeScript, and Tailwind CSS.',
+    link: 'https://moovimiento.com',
+    image: '/moovimiento-com.png',
+    id: 'project3',
+  },
+  {
+    name: 'Algoritmos1.com',
+    description:
+      'Academic portal for Algoritmos I students at FAMAF UNC to access resources and exam tools. Built with Astro.js.',
+    link: 'https://algoritmos1.com',
+    image: '/algoritmos1-com.png',
+    id: 'project4',
+  },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
@@ -53,7 +69,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     company: 'Catsule Corp',
     title: 'Full Stack Web Developer',
     start: '2024',
-    end: '2025',
+    end: 'Present',
     link: '/work/full-stack-web-developer',
     id: 'work1',
   },
@@ -75,32 +91,39 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
 ]
 
+export const EDUCATION: WorkExperience[] = [
+  {
+    company: 'Universidad de la Defensa Nacional',
+    title: 'Cyberdefense',
+    start: '2025',
+    end: 'Present',
+    link: '/education/cyberdefense',
+    id: 'edu1',
+  },
+  {
+    company: 'Universidad Nacional de Córdoba',
+    title: 'Computer Science',
+    start: '2024',
+    end: '2025',
+    link: '/education/computer-science',
+    id: 'edu2',
+  },
+  {
+    company: 'Professional Google Career Certificates',
+    title: 'IT Support & Cybersecurity',
+    start: '2022',
+    end: '2023',
+    link: '/education/it-support-and-cybersecurity',
+    id: 'edu3',
+  },
+]
+
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Hacking Through the Holidays: My Advent of Cyber 2025 Experience',
     description: 'A daily journey through TryHackMe\'s cybersecurity challenges, learning new skills and solving puzzles.',
     link: '/blog/advent-of-cyber-2025',
     uid: 'blog-1',
-  },
-  {
-    title: 'Lorem ipsum',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
-  },
-  {
-    title: 'Lorem ipsum',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'Lorem ipsum',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
   },
 ]
 

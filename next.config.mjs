@@ -16,6 +16,11 @@ const nextConfig = {
         destination: '/#blog',
         permanent: true,
       },
+      {
+        source: '/education',
+        destination: '/#education',
+        permanent: true,
+      },
     ];
   },
 };
