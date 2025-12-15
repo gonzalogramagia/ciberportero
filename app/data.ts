@@ -114,20 +114,20 @@ export const EDUCATION: WorkExperience[] = [
     id: 'edu3',
   },
   {
-    company: 'Scrimba.com',
-    title: 'Frontend Development',
-    start: '2024',
-    end: '2024',
-    link: 'https://scrimba.com/home',
-    id: 'edu4',
-  },
-  {
     company: 'Professional Google Career Certificates',
     title: 'IT Support & Cybersecurity',
-    start: '2022',
+    start: '2023',
     end: '2023',
     link: 'https://grow.google/certificates/',
     id: 'edu5',
+  },
+  {
+    company: 'Scrimba.com',
+    title: 'Frontend Development',
+    start: '2022',
+    end: '2022',
+    link: 'https://scrimba.com/home',
+    id: 'edu4',
   },
 ]
 
@@ -159,4 +159,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
   }
 ]
 
-export const EMAIL = 'ciberportero@gmail.com'
+export const EMAIL = 'gonzalogramagia@gmail.com'
