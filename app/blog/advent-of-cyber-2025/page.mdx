@@ -9,6 +9,7 @@ export const metadata = {
 
 import Link from 'next/link'
 import { TryHackMeBadge } from '../../../components/tryhackme-badge'
+import { AdventNav, DaySection } from './advent-components'
 
 # Hacking Through the Holidays: My Advent of Cyber 2025 Experience
 
@@ -22,11 +23,15 @@ Christmas has come early for cybersecurity enthusiasts! This year I've joined Tr
 
 Here I will be sharing my progress and what I learn in each challenge.
 
-<TryHackMeBadge />
+<AdventNav />
 
 ## 0) Advent of Cyber Prep Track
 
 Before the main event started, I completed the "Prep Track". It was a series of warm-up tasks designed to get beginners ready (and refresh the memory of veterans) for what's coming. It covered essential basic concepts to ensure everyone is ready for the daily challenges.
+
+<TryHackMeBadge />
+
+<DaySection day={1}>
 
 ## 1) Linux CLI - Shells Bells
 
@@ -37,11 +42,19 @@ Day 1 started with the basics but fundamental: the Linux terminal. "Shells Bells
 ![Day 1 Screenshot](/thm-aoc2025-1.webp)
 *(Day 1 Challenge: Shells Bells)*
 
+</DaySection>
+
+<DaySection day={2}>
+
 ## 2) Phishing - Merry Clickmas
 
 **Topic:** Social Engineering and Phishing.
 
 Day 2 got interesting with "Merry Clickmas". We learned how to use the **Social-Engineer Toolkit (SET)** to simulate phishing attacks. The challenge demonstrated how easy it can be to trick users into handing over their credentials and the importance of always being alert to suspicious emails.
+
+</DaySection>
+
+<DaySection day={3}>
 
 ## 3) Splunk Basics - Did you SIEM?
 
@@ -52,6 +65,10 @@ On day 3, we delved into the world of defense (Blue Team) with "Did you SIEM?". 
 ![Day 3 Screenshot](/thm-aoc2025-3.webp)
 *(Day 3 Challenge: Did you SIEM?)*
 
+</DaySection>
+
+<DaySection day={4}>
+
 ## 4) AI in Security - old sAInt nick
 
 **Topic:** Artificial Intelligence in Cybersecurity.
@@ -60,6 +77,10 @@ Day 4, "old sAInt nick", showed us the power of AI. We explored how artificial i
 
 ![Day 4 Screenshot](/thm-aoc2025-4.webp)
 *(Day 4 Challenge: old sAInt nick)*
+
+</DaySection>
+
+<DaySection day={5}>
 
 ## 5) Web Security - It’s Dangerously Obvious, Really
 
@@ -70,6 +91,10 @@ Day 5 focused on a critical web vulnerability: **IDOR**. We explored how attacke
 ![Day 5 Screenshot](/thm-aoc2025-5.webp)
 *(Day 5 Challenge: It’s Dangerously Obvious, Really)*
 
+</DaySection>
+
+<DaySection day={6}>
+
 ## 6) Malware Analysis - Principles of Malware Analysis
 
 **Topic:** Static and Dynamic Malware Analysis.
@@ -79,7 +104,11 @@ Day 6 introduced the fascinating world of **Malware Analysis**. We learned to di
 ![Day 6 Screenshot](/thm-aoc2025-6.webp)
 *(Here goes a screenshot of the Day 6 challenge)*
 
+</DaySection>
+
 ---
+
+<DaySection day={7}>
 
 ## 7) Network Discovery - Scan-ta Clause
 
@@ -90,6 +119,10 @@ Day 7 took us back to the basics of reconnaissance. We used **Nmap** to scan a n
 ![Day 7 Screenshot](/thm-aoc2025-7.webp)
 *(Day 7 Challenge: Scan-ta Clause)*
 
+</DaySection>
+
+<DaySection day={8}>
+
 ## 8) Prompt Injection - Sched-yule Conflict
 
 **Topic:** Exploiting AI and LLMs.
@@ -98,6 +131,10 @@ On Day 8, we explored a modern vulnerability: **Prompt Injection**. We interacte
 
 ![Day 8 Screenshot](/thm-aoc2025-8.png)
 *(Day 8 Challenge: Sched-yule Conflict)*
+
+</DaySection>
+
+<DaySection day={9}>
 
 ## 9) Passwords - A Cracking Christmas
 
@@ -108,6 +145,10 @@ Day 9 was all about breaking into encrypted files. We analyzed a protected ZIP f
 ![Day 9 Screenshot](/thm-aoc2025-9.png)
 *(Day 9 Challenge: A Cracking Christmas)*
 
+</DaySection>
+
+<DaySection day={10}>
+
 ## 10) SOC Alert Triaging - Tinsel Triage
 
 **Topic:** Blue Team Operations and Log Analysis.
@@ -116,6 +157,10 @@ Day 10 put us in the shoes of a SOC Analyst. We used **Microsoft Sentinel** to i
 
 ![Day 10 Screenshot](/thm-aoc2025-10.webp)
 *(Day 10 Challenge: Tinsel Triage)*
+
+</DaySection>
+
+<DaySection day={11}>
 
 ## 11) XSS - Merry XSSMas
 
@@ -126,6 +171,10 @@ Day 11 focused on web application security, specifically **Reflected XSS**. We l
 ![Day 11 Screenshot](/thm-aoc2025-11.png)
 *(Day 11 Challenge: Merry XSSMas)*
 
+</DaySection>
+
+<DaySection day={12}>
+
 ## 12) Phishing - Phishmas Greetings
 
 **Topic:** Email Analysis and Phishing Detection.
@@ -134,6 +183,10 @@ Day 12 returned to the most common attack vector: Phishing. We analyzed suspicio
 
 ![Day 12 Screenshot](/thm-aoc2025-12.webp)
 *(Day 12 Challenge: Phishmas Greetings)*
+
+</DaySection>
+
+<DaySection day={13}>
 
 ## 13) YARA Rules - YARA mean one!
 
@@ -144,6 +197,10 @@ On Day 13, we learned to write **YARA rules** to detect malware based on pattern
 ![Day 13 Screenshot](/thm-aoc2025-13.png)
 *(Day 13 Challenge: YARA mean one!)*
 
+</DaySection>
+
+<DaySection day={14}>
+
 ## 14) Containers - DoorDasher's Demise
 
 **Topic:** Docker and Container Security.
@@ -153,7 +210,11 @@ Day 14 introduced us to the world of containers. We explored the structure of a 
 ![Day 14 Screenshot](/thm-aoc2025-14.png)
 *(Day 14 Challenge: DoorDasher's Demise)*
 
+</DaySection>
+
 ---
+
+<DaySection day={15}>
 
 ## 15) Web Attack Forensics - Drone Alone
 
@@ -164,6 +225,10 @@ Day 15 focused on **Web Attack Forensics**. We used **Splunk** to analyze web se
 ![Day 15 Screenshot](/thm-aoc2025-15.png)
 *(Day 15 Challenge: Drone Alone)*
 
+</DaySection>
+
+<DaySection day={16}>
+
 ## 16) Forensics - Registry Furensics
 
 **Topic:** Windows Registry Forensics.
@@ -172,6 +237,10 @@ Day 16 dove into the **Windows Registry**, a goldmine for forensic investigators
 
 ![Day 16 Screenshot](/thm-aoc2025-16.png)
 *(Day 16 Challenge: Registry Furensics)*
+
+</DaySection>
+
+<DaySection day={17}>
 
 ## 17) CyberChef - Hoperation Save McSkidy
 
@@ -182,7 +251,11 @@ Day 17 introduced us to **CyberChef**, the "Cyber Swiss Army Knife." We practice
 ![Day 17 Screenshot](/thm-aoc2025-17.png)
 *(Day 17 Challenge: Hoperation Save McSkidy)*
 
+</DaySection>
+
 ---
+
+<DaySection day={18}>
 
 ## 18) Obfuscation - The Egg Shell File
 
@@ -193,6 +266,10 @@ Day 18 challenged us to unravel the secrets hidden within a suspicious PowerShel
 ![Day 18 Screenshot](/thm-aoc2025-18.png)
 *(Day 18 Challenge: The Egg Shell File)*
 
+</DaySection>
+
+<DaySection day={19}>
+
 ## 19) ICS/Modbus - Claus for Concern
 
 **Topic:** Industrial Control Systems (ICS) and Modbus.
@@ -201,6 +278,10 @@ Day 19 took a turn into the physical world with **Industrial Control Systems (IC
 
 ![Day 19 Screenshot](/thm-aoc2025-19.png)
 *(Day 19 Challenge: Claus for Concern)*
+
+</DaySection>
+
+<DaySection day={20}>
 
 ## 20) Race Conditions - Toy to The World
 
@@ -211,6 +292,10 @@ On Day 20, we explored a timing-based vulnerability known as a **Race Condition*
 ![Day 20 Screenshot](/thm-aoc2025-20.png)
 *(Day 20 Challenge: Toy to The World)*
 
+</DaySection>
+
+<DaySection day={21}>
+
 ## 21) Malware Analysis - Malhare.exe
 
 **Topic:** Reverse Engineering and HTA Analysis.
@@ -220,7 +305,9 @@ Day 21 brought us back to **Malware Analysis**, this time focusing on a maliciou
 ![Day 21 Screenshot](/thm-aoc2025-21.png)
 *(Day 21 Challenge: Malhare.exe)*
 
----
+</DaySection>
+
+<DaySection day={22}>
 
 ## 22) C2 Detection - Command & Carol
 
@@ -231,9 +318,13 @@ Day 22 focused on **Threat Hunting** and detecting **Command and Control (C2)** 
 ![Day 22 Screenshot](/thm-aoc2025-22.png)
 *(Day 22 Challenge: Command & Carol)*
 
+</DaySection>
+
 ---
 
 That's all for now! I have completed the first 22 days and I'm learning a lot. I will keep updating this post as I progress through the remaining challenges. Stay tuned!
+
+<TryHackMeBadge />
 
 <div className="mt-24 mb-0">
   <Link href="/#blog" className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 underline">
