@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Ciberportero',
-    template: '%s | Ciberportero',
+    default: 'Gonzalo\'s Portfolio',
+    template: '%s | Gonzalo\'s Portfolio',
   },
   description:
-    'Ciberportero is the personal portfolio of Gonzalo Gramagia, an IT professional transitioning into Cybersecurity. Showcasing projects, work experience, and insights on web development and security.',
+    'Website of the personal portfolio of Gonzalo Gramaglia, an IT professional transitioning into Cybersecurity. Showcasing projects, work experience, and insights on web development and security.',
 };
 
 const geist = Geist({

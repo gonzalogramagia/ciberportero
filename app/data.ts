@@ -16,6 +16,7 @@ type WorkExperience = {
   end: string
   link: string
   id: string
+  description?: string
 }
 
 type BlogPost = {
@@ -81,7 +82,7 @@ export const PROJECTS_ES: Project[] = [
   },
   {
     name: 'Alianza La Libertad Avanza Córdoba',
-    description: 'Sitio web para administradores y editores de LLA para publicar resoluciones y declaraciones. Construido con Nuxt 3, Tailwind CSS y Nuxt Content.',
+    description: 'Sitio web para que administradores y editores de LLA puedan publicar resoluciones y declaraciones. Construido con Nuxt 3, Tailwind CSS y Nuxt Content.',
     link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
     youtube:
       'qX0PC89YqlY',
@@ -116,14 +117,16 @@ export const WORK_EXPERIENCE_EN: WorkExperience[] = [
     end: 'Present',
     link: '/work/full-stack-developer',
     id: 'work1',
+    description: 'Software development company specializing in custom web solutions.',
   },
   {
-    company: 'Stämm Biotech',
+    company: 'Stämm',
     title: 'Help Desk Specialist',
     start: '2023',
     end: '2024',
     link: '/work/help-desk-specialist',
     id: 'work2',
+    description: 'Biotech startup developing next-gen biomanufacturing technologies.',
   },
 ]
 
@@ -135,14 +138,16 @@ export const WORK_EXPERIENCE_ES: WorkExperience[] = [
     end: 'Presente',
     link: '/work/full-stack-developer',
     id: 'work1',
+    description: 'Empresa de desarrollo de soluciones web a medida.',
   },
   {
-    company: 'Stämm Biotech',
+    company: 'Stämm',
     title: 'Especialista de Help Desk',
     start: '2023',
     end: '2024',
     link: '/work/help-desk-specialist',
     id: 'work2',
+    description: 'Startup de biotecnología de próxima generación.',
   },
 ]
 
@@ -216,7 +221,7 @@ export const EDUCATION_ES: WorkExperience[] = [
   },
   {
     company: 'Certificados Profesionales de Google',
-    title: 'Soporte TI y Ciberseguridad',
+    title: 'Soporte IT y Ciberseguridad',
     start: '2023',
     end: '2023',
     link: 'https://grow.google/certificates/',

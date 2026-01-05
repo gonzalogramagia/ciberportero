@@ -259,6 +259,11 @@ export function HomeContent() {
                                         <p className="text-zinc-500 dark:text-zinc-400">
                                             {job.company}
                                         </p>
+                                        {job.description && (
+                                            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                                                {job.description}
+                                            </p>
+                                        )}
                                     </div>
                                     <p className="text-zinc-600 dark:text-zinc-400">
                                         {job.start} - {job.end}
@@ -383,11 +388,12 @@ export function HomeContent() {
                         }}
                     >
                         {BLOG_POSTS[language].map((post) => (
-                            <Link
+                            <MotionLink
                                 key={post.uid}
                                 className="-mx-3 rounded-xl px-3 py-3 relative overflow-hidden"
                                 href={post.link}
                                 data-id={post.uid}
+                                whileHover={{ scale: 1.02 }}
                             >
                                 <motion.div
                                     className="absolute inset-0 mix-blend-overlay"
@@ -415,7 +421,7 @@ export function HomeContent() {
                                         {post.description}
                                     </p>
                                 </div>
-                            </Link>
+                            </MotionLink>
                         ))}
                     </AnimatedBackground>
                 </div>
