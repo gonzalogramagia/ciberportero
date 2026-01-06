@@ -189,7 +189,7 @@ export function HomeContent() {
                     <p className="text-zinc-600 dark:text-zinc-400">
                         {t.about.part1}
                         <a
-                            href="https://drive.google.com/file/d/1NcfLthcQsSNLW4qNpr8Bpdlvayn87Lkb/view?usp=sharing"
+                            href="https://www.coursera.org/account/accomplishments/professional-cert/2U2F6SMQXZN5"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:text-zinc-950 dark:hover:text-zinc-50"
@@ -198,7 +198,7 @@ export function HomeContent() {
                         </a>
                         {t.about.part2}
                         <a
-                            href="https://drive.google.com/file/d/1TjWWtZt7LI3_fYqzr289CH52Ums2Aliv/view?usp=sharing"
+                            href="https://www.coursera.org/account/accomplishments/specialization/5SEJBLSXBQT5"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:text-zinc-950 dark:hover:text-zinc-50"
@@ -359,6 +359,11 @@ export function HomeContent() {
                                         <p className="text-zinc-500 dark:text-zinc-400">
                                             {edu.company}
                                         </p>
+                                        {edu.description && (
+                                            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                                                {edu.description}
+                                            </p>
+                                        )}
                                     </div>
                                     <p className="text-zinc-600 dark:text-zinc-400">
                                         {edu.start} - {edu.end}

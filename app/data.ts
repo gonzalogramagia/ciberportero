@@ -33,80 +33,80 @@ type SocialLink = {
 
 export const PROJECTS_EN: Project[] = [
   {
-    name: 'Entrenar.app',
-    description:
-      'Web app for UNC students to track workouts with personalized routines and social features. Built with Go, React, and Supabase.',
-    link: 'https://entrenar.app/',
-    image: '/entrenar-app.png',
-    github: 'https://github.com/gonzalogramagia/entrenar',
-    id: 'project1',
-  },
-  {
-    name: 'Alianza La Libertad Avanza Córdoba',
-    description: 'Website for LLA admins and editors to publish resolutions and statements. Built with Nuxt 3, Tailwind CSS, and Nuxt Content.',
-    link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
-    youtube:
-      'qX0PC89YqlY',
-    github: 'https://github.com/bouchardista/alianza-la-libertad-avanza',
-    id: 'project2',
-  },
-  {
     name: 'Moovimiento.com',
     description:
-      'Modern landing page for a custom nut mix business featuring checkout integration. Built with Next.js 14, TypeScript, and Tailwind CSS.',
+      'Modern web application that allows users to build custom nut mixes, developed with a strong focus on security, stability, and best practices, simulating real-world prod environments ⚡ Tech Stack: Built with Next.js, TypeScript, and Tailwind.',
     link: 'https://mas.moovimiento.com',
     image: '/moovimiento-com.png',
     github: 'https://github.com/moovimiento/mas',
     id: 'project3',
   },
+  // {
+  //   name: 'Alianza La Libertad Avanza Córdoba',
+  //   description: 'Website for LLA admins and editors to publish resolutions and statements. Built with Nuxt 3, Tailwind CSS, and Nuxt Content.',
+  //   link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
+  //   youtube:
+  //     'qX0PC89YqlY',
+  //   github: 'https://github.com/bouchardista/alianza-la-libertad-avanza',
+  //   id: 'project2',
+  // },
   {
-    name: 'Algoritmos1.com',
+    name: 'Entrenar.app',
     description:
-      'Academic portal for Algoritmos I students at FAMAF UNC to access resources and exam tools. Built with Astro.js.',
-    link: 'https://algoritmos1.com',
-    image: '/algoritmos1-com.png',
-    github: 'https://github.com/gonzalogramagia/algoritmos',
-    id: 'project4',
+      'Originally started as a workout tracking platform for UNC students, the project is built with a strong emphasis on security, reliability, and real-world system design 💪 Tech Stack: Built with Go, React, and Supabase.',
+    link: 'https://entrenar.app/',
+    image: '/entrenar-app.png',
+    github: 'https://github.com/gonzalogramagia/entrenar',
+    id: 'project1',
   },
+  // {
+  //   name: 'Algoritmos1.com',
+  //   description:
+  //     'Academic portal for Algoritmos I students at FAMAF UNC to access resources and exam tools. Built with Astro.js.',
+  //   link: 'https://algoritmos1.com',
+  //   image: '/algoritmos1-com.png',
+  //   github: 'https://github.com/gonzalogramagia/algoritmos',
+  //   id: 'project4',
+  // },
 ]
 
 export const PROJECTS_ES: Project[] = [
   {
-    name: 'Entrenar.app',
-    description:
-      'Aplicación web para estudiantes de la UNC para seguimiento de entrenamientos con rutinas personalizadas y funciones sociales. Construido con Go, React y Supabase.',
-    link: 'https://entrenar.app/',
-    image: '/entrenar-app.png',
-    github: 'https://github.com/gonzalogramagia/entrenar',
-    id: 'project1',
-  },
-  {
-    name: 'Alianza La Libertad Avanza Córdoba',
-    description: 'Sitio web para que administradores y editores de LLA puedan publicar resoluciones y declaraciones. Construido con Nuxt 3, Tailwind CSS y Nuxt Content.',
-    link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
-    youtube:
-      'qX0PC89YqlY',
-    github: 'https://github.com/bouchardista/alianza-la-libertad-avanza',
-    id: 'project2',
-  },
-  {
     name: 'Moovimiento.com',
     description:
-      'Landing page moderna para un negocio de mix de frutos secos personalizados con integración de pago. Construido con Next.js 14, TypeScript y Tailwind CSS.',
+      'Aplicación web moderna que permite a los usuarios crear mezclas de frutos secos personalizadas, desarrollada con un fuerte enfoque en la seguridad, la estabilidad y las mejores prácticas, simulando entornos de producción del mundo real ⚡ Construido con Next.js, TypeScript y Tailwind.',
     link: 'https://mas.moovimiento.com',
     image: '/moovimiento-com.png',
     github: 'https://github.com/moovimiento/mas',
     id: 'project3',
   },
+  // {
+  //   name: 'Alianza La Libertad Avanza Córdoba',
+  //   description: 'Sitio web para que administradores y editores de LLA puedan publicar resoluciones y declaraciones. Construido con Nuxt 3, Tailwind CSS y Nuxt Content.',
+  //   link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
+  //   youtube:
+  //     'qX0PC89YqlY',
+  //   github: 'https://github.com/bouchardista/alianza-la-libertad-avanza',
+  //   id: 'project2',
+  // },
   {
-    name: 'Algoritmos1.com',
+    name: 'Entrenar.app',
     description:
-      'Portal académico para estudiantes de Algoritmos I en FAMAF UNC para acceder a recursos y herramientas de examen. Construido con Astro.js.',
-    link: 'https://algoritmos1.com',
-    image: '/algoritmos1-com.png',
-    github: 'https://github.com/gonzalogramagia/algoritmos',
-    id: 'project4',
+      'Originalmente iniciada como una plataforma de seguimiento de entrenamientos para estudiantes de la UNC, el proyecto está construido con un fuerte énfasis en la seguridad, la fiabilidad y el diseño de sistemas del mundo real 💪 Construido con Go, React y Supabase.',
+    link: 'https://entrenar.app/',
+    image: '/entrenar-app.png',
+    github: 'https://github.com/gonzalogramagia/entrenar',
+    id: 'project1',
   },
+  // {
+  //   name: 'Algoritmos1.com',
+  //   description:
+  //     'Portal académico para estudiantes de Algoritmos I en FAMAF UNC para acceder a recursos y herramientas de examen. Construido con Astro.js.',
+  //   link: 'https://algoritmos1.com',
+  //   image: '/algoritmos1-com.png',
+  //   github: 'https://github.com/gonzalogramagia/algoritmos',
+  //   id: 'project4',
+  // },
 ]
 
 export const WORK_EXPERIENCE_EN: WorkExperience[] = [
@@ -114,7 +114,7 @@ export const WORK_EXPERIENCE_EN: WorkExperience[] = [
     company: 'Catsule Corp',
     title: 'Full Stack Developer',
     start: '2024',
-    end: 'Present',
+    end: '2025',
     link: '/work/full-stack-developer',
     id: 'work1',
     description: 'Software development company specializing in custom web solutions.',
@@ -135,14 +135,14 @@ export const WORK_EXPERIENCE_ES: WorkExperience[] = [
     company: 'Catsule Corp',
     title: 'Desarrollador Full Stack',
     start: '2024',
-    end: 'Presente',
+    end: '2025',
     link: '/work/full-stack-developer',
     id: 'work1',
     description: 'Empresa de desarrollo de soluciones web a medida.',
   },
   {
     company: 'Stämm',
-    title: 'Especialista de Help Desk',
+    title: 'Especialista en Help Desk',
     start: '2023',
     end: '2024',
     link: '/work/help-desk-specialist',
@@ -159,6 +159,7 @@ export const EDUCATION_EN: WorkExperience[] = [
     end: 'Present',
     link: 'https://undef.edu.ar/fadena/carreras-de-grado/licciberdefensa/',
     id: 'edu1',
+    description: 'Argentinian university specializing in defense and security studies.',
   },
   {
     company: 'Universidad Nacional de Córdoba',
@@ -167,6 +168,7 @@ export const EDUCATION_EN: WorkExperience[] = [
     end: '2025',
     link: 'https://www.famaf.unc.edu.ar/academica/grado/licenciatura-en-ciencias-de-la-computaci%C3%B3n/',
     id: 'edu2',
+    description: 'Oldest university in Argentina, renowned for science and technology.',
   },
   {
     company: 'Boot.dev',
@@ -175,14 +177,16 @@ export const EDUCATION_EN: WorkExperience[] = [
     end: '2024',
     link: 'https://boot.dev',
     id: 'edu3',
+    description: 'Hands-on computer science curriculum focused on backend development.',
   },
   {
-    company: 'Professional Google Career Certificates',
+    company: 'Grow with Google',
     title: 'IT Support & Cybersecurity',
     start: '2023',
     end: '2023',
     link: 'https://grow.google/certificates/',
     id: 'edu5',
+    description: 'Professional training programs designed by Google.',
   },
   {
     company: 'Scrimba.com',
@@ -191,6 +195,7 @@ export const EDUCATION_EN: WorkExperience[] = [
     end: '2022',
     link: 'https://scrimba.com/home',
     id: 'edu4',
+    description: 'Interactive learning platform for frontend and fullstack development.',
   },
 ]
 
@@ -202,6 +207,7 @@ export const EDUCATION_ES: WorkExperience[] = [
     end: 'Presente',
     link: 'https://undef.edu.ar/fadena/carreras-de-grado/licciberdefensa/',
     id: 'edu1',
+    description: 'Universidad nacional especializada en estudios de defensa y seguridad.',
   },
   {
     company: 'Universidad Nacional de Córdoba',
@@ -210,6 +216,7 @@ export const EDUCATION_ES: WorkExperience[] = [
     end: '2025',
     link: 'https://www.famaf.unc.edu.ar/academica/grado/licenciatura-en-ciencias-de-la-computaci%C3%B3n/',
     id: 'edu2',
+    description: 'La universidad más antigua de Argentina, reconocida en ciencia y tecnología.',
   },
   {
     company: 'Boot.dev',
@@ -218,14 +225,16 @@ export const EDUCATION_ES: WorkExperience[] = [
     end: '2024',
     link: 'https://boot.dev',
     id: 'edu3',
+    description: 'Plan de estudios prácticos en computación, centrado en el desarrollo backend.',
   },
   {
-    company: 'Certificados Profesionales de Google',
+    company: 'Grow with Google',
     title: 'Soporte IT y Ciberseguridad',
     start: '2023',
     end: '2023',
     link: 'https://grow.google/certificates/',
     id: 'edu5',
+    description: 'Programas de formación profesional diseñados por Google.',
   },
   {
     company: 'Scrimba.com',
@@ -234,6 +243,7 @@ export const EDUCATION_ES: WorkExperience[] = [
     end: '2022',
     link: 'https://scrimba.com/home',
     id: 'edu4',
+    description: 'Plataforma de aprendizaje interactivo en desarrollo frontend y fullstack.',
   },
 ]
 
@@ -250,12 +260,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
     link: '/blog/codeforces-journey',
     uid: 'blog-2',
   },
-  {
-    title: 'Building a Virtual Network: My Cisco Packet Tracer Journey',
-    description: 'Documenting my progress in building a simulated virtual network using Cisco Packet Tracer while learning from the Cisco Networking Academy.',
-    link: '/blog/cisco-packet-tracer-journey',
-    uid: 'blog-3',
-  },
+
 ]
 
 export const BLOG_POSTS_ES: BlogPost[] = [
@@ -271,12 +276,7 @@ export const BLOG_POSTS_ES: BlogPost[] = [
     link: '/blog/codeforces-journey',
     uid: 'blog-2',
   },
-  {
-    title: 'Construyendo una Red Virtual: Mi Viaje con Cisco Packet Tracer',
-    description: 'Documentando mi progreso en la construcción de una red virtual simulada usando Cisco Packet Tracer mientras aprendo de la Academia de Networking de Cisco.',
-    link: '/blog/cisco-packet-tracer-journey',
-    uid: 'blog-3',
-  },
+
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
