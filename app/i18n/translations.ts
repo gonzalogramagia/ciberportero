@@ -31,7 +31,7 @@ export const translations = {
             part3: '.',
             part4: 'Actualmente comenzando la licenciatura en Ciberdefensa luego de completar un año de Ciencias de la Computación, y buscando un rol de Soporte IT o Analista de Ciberseguridad para aplicar mi experiencia técnica, mis habilidades de resolución de problemas y mi creciente experiencia en protección de sistemas y procesos organizacionales.',
             englishProficiency: 'Nivel de Inglés: ',
-            c1: 'C1 Advanced (CEFR)',
+            c1: 'C1 Avanzado (CEFR)',
         },
         headers: {
             workExperience: 'Experiencia Laboral',

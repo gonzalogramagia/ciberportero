@@ -9,13 +9,15 @@ export function Header() {
   const { language } = useLanguage()
   const t = translations[language]
 
+  const homeLink = language === 'es' ? '/es' : '/'
+
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
-        <Link href="/" className="font-medium text-black dark:text-white">
+        <Link href={homeLink} className="font-medium text-black dark:text-white">
           Gonzalo Gramaglia
         </Link>
-        <Link href="/" className="cursor-pointer block">
+        <Link href={homeLink} className="cursor-pointer block">
           <p className="text-zinc-600 dark:text-zinc-500">
             {t.role}
           </p>

@@ -45,9 +45,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
         // Redirect based on language
         if (lang === 'es' && !pathname?.startsWith('/es')) {
-            router.push('/es')
+            router.push(`/es${pathname}`)
         } else if (lang === 'en' && pathname?.startsWith('/es')) {
-            router.push('/')
+            const newPath = pathname.replace('/es', '')
+            router.push(newPath || '/')
         }
     }
 

@@ -1,0 +1,370 @@
+export const metadata = {
+  title: 'Hackeando en las Fiestas: Mi Experiencia en Advent of Cyber 2025',
+  description:
+    'Este año participo en el Advent of Cyber 2025 de TryHackMe. Aquí documentaré mi progreso diario, aprendiendo sobre seguridad ofensiva y defensiva, desde Linux hasta IA en ciberseguridad.',
+  alternates: {
+    canonical: '/es/blog/advent-of-cyber-2025',
+  },
+};
+
+import Link from 'next/link'
+import { TryHackMeBadge } from '../../../../components/tryhackme-badge'
+import { AdventNav, DaySection } from './advent-components'
+import { MdxCover as Cover } from '../../../../components/mdx-cover'
+
+# Hackeando en las Fiestas: Mi Experiencia en Advent of Cyber 2025
+
+<Cover
+  src="/thm-aoc2025-certificate.png"
+  alt="Certificado Advent of Cyber 2025"
+  caption="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-W1KV6VKCGO.pdf"
+/>
+
+¡La Navidad ha llegado temprano para los entusiastas de la ciberseguridad! Este año me he unido al **Advent of Cyber 2025** de TryHackMe, un evento anual que ofrece desafíos de seguridad diarios durante 24 días. ¡Es una oportunidad fantástica para aprender nuevas habilidades, repasar conceptos fundamentales y, por supuesto, hacer algo de hacking mientras disfrutas de las fiestas!
+
+![Advent of Cyber 2025](/advent-of-cyber-2025.png)
+
+Aquí compartiré mi progreso y lo que aprendo en cada desafío.
+
+<AdventNav />
+
+## 0) Pista de Preparación
+
+Antes de que comenzara el evento principal, completé la "Pista de Preparación". Fue una serie de tareas de calentamiento diseñadas para preparar a los principiantes (y refrescar la memoria de los veteranos) para lo que viene. Cubrió conceptos básicos esenciales para asegurar que todos estén listos para los desafíos diarios.
+
+---
+
+<TryHackMeBadge />
+
+---
+
+<DaySection day={1}>
+
+## 1) Linux CLI - Shells Bells
+
+**Tema:** Introducción a la Línea de Comandos de Linux.
+
+El Día 1 comenzó con lo básico pero fundamental: la terminal de Linux. "Shells Bells" nos llevó a explorar la interfaz de línea de comandos (CLI), aprendiendo cómo navegar por el sistema de archivos, manipular archivos y usar comandos esenciales. Fue un excelente recordatorio de por qué Linux es el sistema operativo por excelencia en ciberseguridad.
+
+![Captura de pantalla Día 1](/thm-aoc2025-1.webp)
+*(Desafío Día 1: Shells Bells)*
+
+</DaySection>
+
+<DaySection day={2}>
+
+## 2) Phishing - Merry Clickmas
+
+**Tema:** Ingeniería Social y Phishing.
+
+El Día 2 se puso interesante con "Merry Clickmas". Aprendimos a usar el **Social-Engineer Toolkit (SET)** para simular ataques de phishing. El desafío demostró lo fácil que puede ser engañar a los usuarios para que entreguen sus credenciales y la importancia de estar siempre alerta ante correos electrónicos sospechosos.
+
+![Captura de pantalla Día 2](/thm-aoc2025-2.png)
+*(Desafío Día 2: Merry Clickmas)*
+
+</DaySection>
+
+<DaySection day={3}>
+
+## 3) Splunk Basics - Did you SIEM?
+
+**Tema:** Monitoreo y Análisis de Logs con Splunk.
+
+En el día 3, nos adentramos en el mundo de la defensa (Blue Team) con "Did you SIEM?". Aprendimos a ingerir y analizar logs personalizados usando **Splunk**, una de las herramientas SIEM (Gestión de Información y Eventos de Seguridad) más populares. Fue genial ver cómo se pueden detectar actividades sospechosas analizando grandes volúmenes de datos.
+
+![Captura de pantalla Día 3](/thm-aoc2025-3.webp)
+*(Desafío Día 3: Did you SIEM?)*
+
+</DaySection>
+
+<DaySection day={4}>
+
+## 4) AI in Security - old sAInt nick
+
+**Tema:** Inteligencia Artificial en Ciberseguridad.
+
+El Día 4, "old sAInt nick", nos mostró el poder de la IA. Exploramos cómo la inteligencia artificial puede usarse tanto para atacar como para defender sistemas. Es fascinante (y un poco aterrador) ver cómo estas tecnologías están remodelando el panorama de la seguridad.
+
+![Captura de pantalla Día 4](/thm-aoc2025-4.webp)
+*(Desafío Día 4: old sAInt nick)*
+
+</DaySection>
+
+<DaySection day={5}>
+
+## 5) Web Security - It’s Dangerously Obvious, Really
+
+**Tema:** Referencias Directas a Objetos Inseguros (IDOR).
+
+El Día 5 se centró en una vulnerabilidad web crítica: **IDOR**. Exploramos cómo los atacantes pueden acceder a datos no autorizados simplemente manipulando parámetros como `user_id` o `packageID` en una URL. El desafío demostró que incluso si las referencias están codificadas (por ejemplo, Base64) o hasheadas, a menudo pueden ser eludidas si el servidor carece de controles de autorización adecuados. Fue una gran lección sobre la diferencia entre autenticación ("quién eres") y autorización ("qué se te permite hacer").
+
+![Captura de pantalla Día 5](/thm-aoc2025-5.webp)
+*(Desafío Día 5: It’s Dangerously Obvious, Really)*
+
+</DaySection>
+
+<DaySection day={6}>
+
+## 6) Malware Analysis - Principles of Malware Analysis
+
+**Tema:** Análisis de Malware Estático y Dinámico.
+
+El Día 6 introdujo el fascinante mundo del **Análisis de Malware**. Aprendimos a distinguir entre **Análisis Estático** (examinar el archivo sin ejecutarlo) usando herramientas como **PeStudio** para verificar cadenas y hashes, y **Análisis Dinámico** (ejecutar el malware en un sandbox seguro) usando **Regshot** y **ProcMon** para observar su comportamiento, como cambios en el registro e interacciones del sistema. Practicamos estas técnicas en una muestra llamada `HopHelper.exe` para entender sus acciones maliciosas.
+
+![Captura de pantalla Día 6](/thm-aoc2025-6.webp)
+*(Aquí va una captura de pantalla del desafío del Día 6)*
+
+</DaySection>
+
+<DaySection day={7}>
+
+## 7) Network Discovery - Scan-ta Clause
+
+**Tema:** Escaneo y Enumeración de Redes.
+
+El Día 7 nos llevó de vuelta a los conceptos básicos de reconocimiento. Usamos **Nmap** para escanear una red, identificar hosts activos, puertos abiertos y servicios en ejecución. Fue un ejercicio práctico para entender cómo los atacantes mapean una infraestructura objetivo y por qué la visibilidad es crucial para los defensores.
+
+![Captura de pantalla Día 7](/thm-aoc2025-7.webp)
+*(Desafío Día 7: Scan-ta Clause)*
+
+</DaySection>
+
+<DaySection day={8}>
+
+## 8) Prompt Injection - Sched-yule Conflict
+
+**Tema:** Explotando IA y LLMs.
+
+En el Día 8, exploramos una vulnerabilidad moderna: **Prompt Injection**. Interactuamos con un agente de IA y aprendimos a crear entradas específicas para eludir sus filtros de seguridad y hacer que revele información sensible o realice acciones no autorizadas. Destacó la nueva superficie de ataque introducida al integrar LLMs en aplicaciones.
+
+![Captura de pantalla Día 8](/thm-aoc2025-8.png)
+*(Desafío Día 8: Sched-yule Conflict)*
+
+</DaySection>
+
+<DaySection day={9}>
+
+## 9) Passwords - A Cracking Christmas
+
+**Tema:** Cracking de Contraseñas y Encriptación.
+
+El Día 9 trató sobre irrumpir en archivos encriptados. Analizamos un archivo ZIP protegido y usamos **John the Ripper** para realizar un ataque de diccionario contra su hash. Este desafío reforzó la importancia de contraseñas fuertes y complejas y mostró cuán fácilmente se pueden forzar claves de encriptación débiles.
+
+![Captura de pantalla Día 9](/thm-aoc2025-9.png)
+*(Desafío Día 9: A Cracking Christmas)*
+
+</DaySection>
+
+<DaySection day={10}>
+
+## 10) SOC Alert Triaging - Tinsel Triage
+
+**Tema:** Operaciones de Blue Team y Análisis de Logs.
+
+El Día 10 nos puso en los zapatos de un Analista SOC. Usamos **Microsoft Sentinel** para investigar alertas de seguridad, filtrar falsos positivos y correlacionar eventos para identificar un compromiso real. Fue una gran experiencia práctica con un SIEM nativo de la nube y el proceso de toma de decisiones involucrado en la respuesta a incidentes.
+
+![Captura de pantalla Día 10](/thm-aoc2025-10.webp)
+*(Desafío Día 10: Tinsel Triage)*
+
+</DaySection>
+
+<DaySection day={11}>
+
+## 11) XSS - Merry XSSMas
+
+**Tema:** Cross-Site Scripting (XSS).
+
+El Día 11 se centró en la seguridad de aplicaciones web, específicamente **Reflected XSS**. Aprendimos cómo inyectar JavaScript malicioso en un sitio web vulnerable para ejecutar código en el navegador de la víctima. El desafío demostró la mecánica del ataque y cómo asegurar las entradas para prevenirlo.
+
+![Captura de pantalla Día 11](/thm-aoc2025-11.png)
+*(Desafío Día 11: Merry XSSMas)*
+
+</DaySection>
+
+<DaySection day={12}>
+
+## 12) Phishing - Phishmas Greetings
+
+**Tema:** Análisis de Correo Electrónico y Detección de Phishing.
+
+El Día 12 regresó al vector de ataque más común: Phishing. Analizamos correos electrónicos sospechosos para identificar indicadores de compromiso (IOCs) como encabezados falsificados, archivos adjuntos maliciosos y enlaces engañosos. Fue un repaso sólido sobre cómo distinguir comunicaciones legítimas de intentos de ingeniería social.
+
+![Captura de pantalla Día 12](/thm-aoc2025-12.webp)
+*(Desafío Día 12: Phishmas Greetings)*
+
+</DaySection>
+
+<DaySection day={13}>
+
+## 13) YARA Rules - YARA mean one!
+
+**Tema:** Detección de Malware con YARA.
+
+En el Día 13, aprendimos a escribir **reglas YARA** para detectar malware basado en patrones en lugar de solo coincidencia de hash. Creamos reglas personalizadas para identificar archivos maliciosos buscando cadenas y secuencias de bytes específicas, una técnica poderosa para cazar amenazas que cambian su firma.
+
+![Captura de pantalla Día 13](/thm-aoc2025-13.png)
+*(Desafío Día 13: YARA mean one!)*
+
+</DaySection>
+
+<DaySection day={14}>
+
+## 14) Containers - DoorDasher's Demise
+
+**Tema:** Seguridad de Docker y Contenedores.
+
+El Día 14 nos introdujo al mundo de los contenedores. Exploramos la estructura de una imagen **Docker**, investigamos sus capas para encontrar secretos ocultos y aprendimos sobre configuraciones erróneas comunes que pueden llevar al escape de contenedores o escalada de privilegios. Fue una lección esencial sobre cómo asegurar arquitecturas modernas de microservicios.
+
+![Captura de pantalla Día 14](/thm-aoc2025-14.png)
+*(Desafío Día 14: DoorDasher's Demise)*
+
+</DaySection>
+
+<DaySection day={15}>
+
+## 15) Web Attack Forensics - Drone Alone
+
+**Tema:** Análisis de Logs de Servidor Web con Splunk.
+
+El Día 15 se centró en **Forense de Ataques Web**. Usamos **Splunk** para analizar logs de servidor web, identificando rastros de un ataque de inyección de comandos. Al correlacionar direcciones IP, agentes de usuario y cargas útiles sospechosas, pudimos reconstruir las acciones del atacante y entender el impacto de la brecha.
+
+![Captura de pantalla Día 15](/thm-aoc2025-15.png)
+*(Desafío Día 15: Drone Alone)*
+
+</DaySection>
+
+<DaySection day={16}>
+
+## 16) Forensics - Registry Furensics
+
+**Tema:** Forense del Registro de Windows.
+
+El Día 16 se sumergió en el **Registro de Windows**, una mina de oro para investigadores forenses. Aprendimos a usar herramientas como **Registry Explorer** para descubrir evidencia de persistencia maliciosa, rastrear fechas de instalación de software e identificar programas ejecutados recientemente para reconstruir la línea de tiempo de una infección.
+
+![Captura de pantalla Día 16](/thm-aoc2025-16.png)
+*(Desafío Día 16: Registry Furensics)*
+
+</DaySection>
+
+<DaySection day={17}>
+
+## 17) CyberChef - Hoperation Save McSkidy
+
+**Tema:** Decodificación e Ingeniería Inversa con CyberChef.
+
+El Día 17 nos introdujo a **CyberChef**, la "Navaja Suiza Cibernética". Practicamos la decodificación de varios esquemas de codificación (Base64, Hex, ROT13) y la inversión de datos ofuscados para revelar banderas ocultas. Fue un gran ejercicio en manipulación de datos y comprensión de cómo los atacantes ocultan sus huellas.
+
+![Captura de pantalla Día 17](/thm-aoc2025-17.png)
+*(Desafío Día 17: Hoperation Save McSkidy)*
+
+</DaySection>
+
+<DaySection day={18}>
+
+## 18) Obfuscation - The Egg Shell File
+
+**Tema:** Ofuscación y Deofuscación.
+
+El Día 18 nos desafió a desentrañar los secretos ocultos dentro de un script de PowerShell sospechoso encontrado en un correo electrónico de phishing. Exploramos los conceptos de **Ofuscación**, distinguiéndola de la encriptación y codificación. Usando **CyberChef**, deofuscamos el script para revelar su verdadera intención, aprendiendo cómo los atacantes ocultan su código malicioso para eludir filtros de seguridad.
+
+![Captura de pantalla Día 18](/thm-aoc2025-18.png)
+*(Desafío Día 18: The Egg Shell File)*
+
+</DaySection>
+
+<DaySection day={19}>
+
+## 19) ICS/Modbus - Claus for Concern
+
+**Tema:** Sistemas de Control Industrial (ICS) y Modbus.
+
+El Día 19 dio un giro hacia el mundo físico con **Sistemas de Control Industrial (ICS)**. ¡Investigamos un sistema de entrega de drones comprometido donde los regalos estaban siendo intercambiados por huevos! El desafío implicó analizar el protocolo **Modbus**, entender cómo se comunican los **PLCs** (Controladores Lógicos Programables) y los sistemas **SCADA**, e identificar los comandos maliciosos que interrumpieron la operación.
+
+![Captura de pantalla Día 19](/thm-aoc2025-19.png)
+*(Desafío Día 19: Claus for Concern)*
+
+</DaySection>
+
+<DaySection day={20}>
+
+## 20) Race Conditions - Toy to The World
+
+**Tema:** Condiciones de Carrera en Aplicaciones Web.
+
+En el Día 20, exploramos una vulnerabilidad basada en tiempo conocida como **Condición de Carrera**. Intentamos comprar un juguete de edición limitada en una tienda en línea y descubrimos que al enviar solicitudes simultáneas, podíamos manipular el conteo de stock y comprar más artículos de los permitidos. Fue una demostración práctica de problemas de concurrencia y cómo prevenirlos usando transacciones atómicas.
+
+![Captura de pantalla Día 20](/thm-aoc2025-20.png)
+*(Desafío Día 20: Toy to The World)*
+
+</DaySection>
+
+<DaySection day={21}>
+
+## 21) Malware Analysis - Malhare.exe
+
+**Tema:** Ingeniería Inversa y Análisis de HTA.
+
+El Día 21 nos trajo de vuelta al **Análisis de Malware**, esta vez enfocándonos en un archivo HTA (Aplicación HTML) malicioso disfrazado de "Encuesta para Desarrolladores". Analizamos el payload `Malhare.exe` / HTA, decodificando cadenas ofuscadas (Base64, ROT13) para entender cómo exfiltraba información del sistema como el nombre de la computadora y el nombre de usuario a un servidor externo.
+
+![Captura de pantalla Día 21](/thm-aoc2025-21.png)
+*(Desafío Día 21: Malhare.exe)*
+
+</DaySection>
+
+<DaySection day={22}>
+
+## 22) C2 Detection - Command & Carol
+
+**Tema:** Detección de Comando y Control (C2) con RITA.
+
+El Día 22 se centró en **Threat Hunting** y la detección de balizas de **Comando y Control (C2)**. Analizamos el tráfico de red (PCAP) convertido en logs de **Zeek**. Usando **RITA** (Real Intelligence Threat Analytics), identificamos patrones de actividad de balizamiento, ayudándonos a descubrir un host comprometido comunicándose con un servidor atacante externo.
+
+![Captura de pantalla Día 22](/thm-aoc2025-22.png)
+*(Desafío Día 22: Command & Carol)*
+
+</DaySection>
+
+
+<DaySection day={23}>
+
+## 23) AWS Security - S3cret Santa
+
+**Tema:** Seguridad en la Nube y Enumeración de AWS.
+
+¡El Día 23 nos llevó a la nube! Exploramos la seguridad de **AWS** (Amazon Web Services), enfocándonos específicamente en **buckets S3** e **IAM** (Gestión de Identidad y Acceso). Aprendimos a usar la CLI de AWS para enumerar permisos, asumir roles para escalar privilegios y acceder a datos sensibles almacenados en buckets de almacenamiento mal configurados. Fue una lección crucial sobre el modelo de responsabilidad compartida y la importancia de asegurar adecuadamente los recursos en la nube.
+
+![Captura de pantalla Día 23](/thm-aoc2025-23.png)
+*(Desafío Día 23: S3cret Santa)*
+
+</DaySection>
+
+<DaySection day={24}>
+
+## 24) Exploitation with cURL - Hoperation Eggsploit
+
+**Tema:** Manipulación y Explotación de Protocolos.
+
+El desafío final, Día 24, fue un gran final que involucró **cURL** y manipulación de protocolos. Usamos cURL para interactuar con un sistema de comunicación, manipulando mensajes MQTT para controlar la maquinaria de una fábrica. Demostró cuán versátiles pueden ser las herramientas de línea de comandos para la explotación y la importancia de validar todas las entradas, incluso en protocolos de comunicación internos.
+
+![Captura de pantalla Día 24](/thm-aoc2025-24.png)
+*(Desafío Día 24: Hoperation Eggsploit)*
+
+</DaySection>
+
+---
+
+<TryHackMeBadge />
+
+---
+
+¡Y eso es todo! He completado con éxito los 24 días del **Advent of Cyber 2025**. Ha sido un viaje increíble, cubriendo una amplia gama de temas desde habilidades básicas de Linux hasta seguridad avanzada en la nube y análisis de malware. He aprendido muchísimo y espero aplicar estas nuevas habilidades en 2026. ¡Happy Hacking y Felices Fiestas!
+
+
+
+<AdventNav />
+
+<div className="mt-24 mb-0">
+  <Link href="/es/#blog" className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 underline">
+    ← Volver al inicio
+  </Link>
+</div>

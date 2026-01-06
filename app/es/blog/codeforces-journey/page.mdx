@@ -1,0 +1,346 @@
+export const metadata = {
+  title: 'Resolviendo Un Desafío de Programación a la Vez: Mi Experiencia en Codeforces',
+  description:
+    'Un viaje diario hacia la programación competitiva, algoritmos y el dominio de Python a través de Codeforces y CS50.',
+  alternates: {
+    canonical: '/es/blog/codeforces-journey',
+  },
+};
+
+import Link from 'next/link'
+import { Spoiler } from '../../../../components/spoiler'
+import { CodeforcesNav, ProblemSection } from './codeforces-components'
+import { MdxCover as Cover } from '../../../../components/mdx-cover'
+
+# Resolviendo Un Desafío de Programación a la Vez: Mi Experiencia en Codeforces
+
+## La Programación Competitiva se Encuentra con la Disciplina Diaria
+
+<Cover
+  src="/codeforces.png"
+  alt="Perfil de Codeforces"
+  caption="https://codeforces.com/profile/ciberportero"
+/>
+
+
+Junto con mi camino de aprendizaje en ciberseguridad, he comenzado un desafío paralelo: resolver [problemas de Codeforces consistentemente](https://codeforces.com/submissions/ciberportero), aproximadamente uno por día, mientras también tomo el [curso CS50 de Python de Harvard](https://www.youtube.com/watch?v=nLRL_NcnK-4). El objetivo no es la velocidad o la calificación (al menos no todavía), sino construir fundamentos sólidos de resolución de problemas, hábitos de Python limpios y pensamiento algorítmico que valdrán la pena a largo plazo—especialmente en seguridad, scripting y automatización.
+
+En esta publicación de blog, compartiré cómo va este viaje, cómo estructuro mi práctica y qué estoy aprendiendo de cada paso.
+
+## Estrategia de Práctica
+
+En lugar de saltar aleatoriamente entre problemas, decidí un enfoque simple y sostenible:
+
+✅ Resolver ~1 problema por día
+
+✅ Trabajar a través de problemas en [orden de cuántas veces fueron resueltos](https://codeforces.com/problemset?order=BY_RATING_ASC)
+
+✅ Enfocarse en entender la lógica, no solo obtener AC (Accepted)
+
+✅ Resolver todo en Python
+
+Esta estructura elimina la fatiga de decisión y mantiene el progreso constante, incluso en días ocupados.
+
+## Aprendiendo en Paralelo: CS50 Python
+
+Al mismo tiempo, estoy tomando el curso de Python de Harvard CS50, que combina extremadamente bien con la práctica de Codeforces. Conceptos como:
+
+![CS50 Python](/python-harvard-cs50.png)
+
+
+*   bucles y condicionales
+*   listas y cadenas
+*   manejo de entrada/salida
+*   estructura de código limpia
+
+aparecen constantemente en problemas de programación competitiva. Muchas tareas de Codeforces se sienten como ejercicios prácticos que refuerzan las lecciones de CS50, lo que hace que ambas experiencias sean más fuertes juntas.
+
+## Desafíos Completados Hasta Ahora
+
+<CodeforcesNav />
+
+<ProblemSection id={1}>
+
+### 1) Watermelon ([Link](https://codeforces.com/problemset/problem/4/A))
+
+**Tema:** Números pares y casos borde
+
+Un problema clásico para principiantes. El desafío parece trivial al principio, pero enseña una lección importante: los casos borde importan. La sandía debe dividirse en dos partes pares y positivas.
+
+<Spoiler>
+```python
+w = int(input())
+ 
+if w > 2 and w % 2 == 0:
+    print("YES")
+else:
+    print("NO")
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={2}>
+
+### 2) Way Too Long Words ([Link](https://codeforces.com/problemset/problem/71/A))
+
+**Tema:** Cadenas e indexación
+
+Este problema introdujo la manipulación básica de cadenas: abreviar palabras largas manteniendo el primer y último carácter y reemplazando el medio con un número.
+
+<Spoiler>
+```python
+n = int(input())
+ 
+for _ in range(n):
+    w = input().strip()
+ 
+    if len(w) > 10:
+        first_letter = w[0]
+        letters_between = len(w[1:-1])
+        last_letter = w[-1]
+        print(first_letter + str(letters_between) + last_letter)
+    else:
+        print(w)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={3}>
+
+### 3) Team ([Link](https://codeforces.com/problemset/problem/231/A))
+
+**Tema:** Condicionales y Conteo
+
+Dadas las opiniones de múltiples miembros del equipo (0 o 1), la tarea es contar cuántos problemas resolverá realmente el equipo basándose en el acuerdo mayoritario.
+
+<Spoiler>
+```python
+n = int(input())
+ 
+solutions = 0
+ 
+for _ in range(n):
+    votes = list(map(int,input().split()))
+    # input() → "1 0 1" (a single string)
+    # split() → ["1", "0", "1"] (list of strings)
+    # map(int, ...) → 1, 0, 1 <iterator> producing integers
+    # list(...) → [1, 0, 1] (list of integers)
+    consensus = 0
+    for v in votes:
+        if v:
+            consensus += 1
+    if consensus > 1:
+        solutions += 1
+ 
+print(solutions)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={4}>
+
+### 4) Bit++ ([Link](https://codeforces.com/problemset/problem/282/A))
+
+**Tema:** Simulación y Parsing de Cadenas
+
+Un problema de simulación simple donde necesitamos incrementar o decrementar una variable basada en la declaración de entrada (por ejemplo, "X++", "--X").
+
+<Spoiler>
+```python
+n = int(input())	# 1 <= n <= 150
+ 
+result = 0
+ 
+for _ in range(n):
+	character = input()
+	match character[0]:
+		case "X":
+			if character[1] == "+":
+				result += 1
+			else:
+				result -= 1
+		case "+":
+			result += 1
+		case "-":
+			result -= 1
+ 
+print(result)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={5}>
+
+### 5) Next Round ([Link](https://codeforces.com/contest/158/problem/A))
+
+**Tema:** Arrays y Filtrado
+
+Necesitamos determinar cuántos participantes avanzan a la siguiente ronda basándose en un umbral de puntuación.
+
+<Spoiler>
+```python
+nk = input().split()
+n = int(nk[0])
+k = int(nk[1])
+ 
+# better alternative: n, k = map(int, input().split())
+ 
+scores = list(map(int, input().split()))
+kth_score = scores[k-1]
+ 
+i = 0
+ 
+for score in scores:
+	if score < kth_score or score == 0:
+		break
+	i += 1
+ 
+print(i)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={6}>
+
+### 6) Domino piling ([Link](https://codeforces.com/problemset/problem/50/A))
+
+**Tema:** Matemáticas y Geometría
+
+Calculando el número máximo de fichas de dominó que pueden caber en un tablero rectangular.
+
+<Spoiler>
+```python
+h, w = map(int, input().split())
+ 
+squares = h * w
+ 
+print(int(squares / 2))
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={7}>
+
+### 7) Beautiful Matrix ([Link](https://codeforces.com/problemset/problem/263/A))
+
+**Tema:** Implementación
+
+Se nos da una matriz de 5x5 con un solo '1' y necesitamos calcular el número mínimo de movimientos (intercambios) para llevarlo al centro (3,3). La solución implica encontrar las coordenadas del '1' y calcular la distancia Manhattan al centro.
+
+<Spoiler>
+```python
+matrix = []
+ 
+one_position = tuple()
+ 
+swaps = 0
+ 
+for row in range(5):
+	matrix.append( list( map( int, input().split() ) ) )
+	for column in range(5):
+		if matrix[row][column] == 1:
+			one_position = (column, row)
+ 
+swaps = abs(one_position[0] - 2) + abs(one_position[1] - 2)
+ 
+print(swaps)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={8}>
+
+### 8) Helpful Maths ([Link](https://codeforces.com/problemset/problem/339/A))
+
+**Tema:** Cadenas y Ordenamiento
+
+Necesitamos reordenar una suma de números (1, 2, 3) para que estén en orden no decreciente. Resolví esto usando un algoritmo de ordenamiento de burbuja, gracias a la [clase de algoritmos de CS50](https://youtu.be/6Svu_ae5ebk).
+
+<Spoiler>
+```python
+numbers = list( map( int, input().split("+") ) )
+ 
+swaps = -1
+ 
+while(swaps != 0):
+	swaps = 0
+	for i in range(len(numbers)-1):
+		if numbers[i] > numbers[i+1]:
+			aux = numbers[i]
+			numbers[i] = numbers[i+1]
+			numbers[i+1] = aux
+			swaps += 1
+ 
+result = "+".join(list(map(str,numbers)))
+ 
+print(result)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={9}>
+
+### 9) Soldier and Bananas ([Link](https://codeforces.com/problemset/problem/546/A))
+
+**Tema:** Matemáticas
+
+Un soldado quiere comprar bananas donde el costo aumenta por cada banana. Necesitamos calcular el costo total usando una fórmula de serie aritmética (o un bucle) y determinar cuánto dinero necesita pedir prestado.
+
+<Spoiler>
+```python
+cost, dollars, bananas = map( int, input().split() )
+ 
+total = 0
+borrow = 0
+ 
+for i in range(1, bananas + 1):
+	total += cost * i
+ 
+if(total > dollars):
+	borrow = total - dollars
+ 
+print(borrow)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<CodeforcesNav />
+
+## Por Qué Esto Importa (Especialmente para Ciberseguridad)
+
+Aunque Codeforces es "programación competitiva", las habilidades se traducen directamente a la ciberseguridad:
+
+*   pensamiento lógico
+*   desglosar problemas en pasos
+*   leer especificaciones cuidadosamente
+*   escribir scripts confiables
+
+Combinado con Python y estudios de seguridad, este hábito diario me está ayudando a ser más preciso, más rápido en el razonamiento y más seguro con el código.
+
+## Hacia Adelante
+
+El plan es simple:
+
+*   seguir resolviendo un problema por día
+*   aumentar gradualmente la dificultad
+*   continuar sincronizando la práctica de Codeforces con conceptos de CS50 Python
+*   mantener la consistencia sobre la intensidad
+
+Pequeños pasos, todos los días.
+
+Más actualizaciones pronto 🚀
+
+<div className="mt-24 mb-0">
+  <Link href="/es/#blog" className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 underline">
+    ← Volver al inicio
+  </Link>
+</div>

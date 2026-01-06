@@ -136,7 +136,7 @@ export const WORK_EXPERIENCE_ES: WorkExperience[] = [
     title: 'Desarrollador Full Stack',
     start: '2024',
     end: '2025',
-    link: '/work/full-stack-developer',
+    link: '/es/work/full-stack-developer',
     id: 'work1',
     description: 'Empresa de desarrollo de soluciones web a medida.',
   },
@@ -145,7 +145,7 @@ export const WORK_EXPERIENCE_ES: WorkExperience[] = [
     title: 'Especialista en Help Desk',
     start: '2023',
     end: '2024',
-    link: '/work/help-desk-specialist',
+    link: '/es/work/help-desk-specialist',
     id: 'work2',
     description: 'Startup de biotecnología de próxima generación.',
   },
@@ -267,13 +267,13 @@ export const BLOG_POSTS_ES: BlogPost[] = [
   {
     title: 'Hackeando en las Fiestas: Mi Experiencia en Advent of Cyber 2025',
     description: 'Un viaje diario a través de los desafíos de ciberseguridad de TryHackMe, aprendiendo nuevas habilidades y resolviendo acertijos.',
-    link: '/blog/advent-of-cyber-2025',
+    link: '/es/blog/advent-of-cyber-2025',
     uid: 'blog-1',
   },
   {
     title: 'Resolviendo Un Desafío de Programación a la Vez: Mi Experiencia en Codeforces',
     description: 'Un viaje diario hacia la programación competitiva, algoritmos y el dominio de Python a través de Codeforces y CS50.',
-    link: '/blog/codeforces-journey',
+    link: '/es/blog/codeforces-journey',
     uid: 'blog-2',
   },
 
