@@ -35,7 +35,7 @@ export const PROJECTS_EN: Project[] = [
   {
     name: 'Moovimiento.com',
     description:
-      'Modern web application that allows users to build custom nut mixes, developed with a strong focus on security, stability, and best practices, simulating real-world prod environments ⚡ Tech Stack: Built with Next.js, TypeScript, and Tailwind.',
+      'Modern web application that allows users to build custom nut mixes. Developed with a strong focus on security, stability, and best practices, simulating real-world prod environments ⚡ Tech Stack: Built with Next.js, TypeScript, and Tailwind.',
     link: 'https://mas.moovimiento.com',
     image: '/moovimiento-com.png',
     github: 'https://github.com/moovimiento/mas',
@@ -53,7 +53,7 @@ export const PROJECTS_EN: Project[] = [
   {
     name: 'Entrenar.app',
     description:
-      'Originally started as a workout tracking platform for UNC students, the project is built with a strong emphasis on security, reliability, and real-world system design 💪 Tech Stack: Built with Go, React, and Supabase.',
+      'Originally started as a workout tracking platform for UNC students. The project is built with a strong emphasis on security, reliability, and real-world system design 💪 Tech Stack: Built with Go, React, and Supabase.',
     link: 'https://entrenar.app/',
     image: '/entrenar-app.png',
     github: 'https://github.com/gonzalogramagia/entrenar',
@@ -74,7 +74,7 @@ export const PROJECTS_ES: Project[] = [
   {
     name: 'Moovimiento.com',
     description:
-      'Aplicación web moderna que permite a los usuarios crear mezclas de frutos secos personalizadas, desarrollada con un fuerte enfoque en la seguridad, la estabilidad y las mejores prácticas, simulando entornos de producción del mundo real ⚡ Construido con Next.js, TypeScript y Tailwind.',
+      'Aplicación web moderna que permite a los usuarios crear mezclas de frutos secos personalizadas. Desarrollada con un fuerte enfoque en la seguridad, la estabilidad y las mejores prácticas, simulando entornos de producción del mundo real ⚡ Construido con Next.js, TypeScript y Tailwind.',
     link: 'https://mas.moovimiento.com',
     image: '/moovimiento-com.png',
     github: 'https://github.com/moovimiento/mas',
@@ -92,7 +92,7 @@ export const PROJECTS_ES: Project[] = [
   {
     name: 'Entrenar.app',
     description:
-      'Originalmente iniciada como una plataforma de seguimiento de entrenamientos para estudiantes de la UNC, el proyecto está construido con un fuerte énfasis en la seguridad, la fiabilidad y el diseño de sistemas del mundo real 💪 Construido con Go, React y Supabase.',
+      'Originalmente iniciada como una plataforma de seguimiento de entrenamientos para estudiantes de la UNC. El proyecto está construido con un fuerte énfasis en la seguridad, la fiabilidad y el diseño de sistemas del mundo real 💪 Construido con Go, React y Supabase.',
     link: 'https://entrenar.app/',
     image: '/entrenar-app.png',
     github: 'https://github.com/gonzalogramagia/entrenar',

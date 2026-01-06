@@ -10,12 +10,17 @@ export const metadata = {
 import Link from 'next/link'
 import { Spoiler } from '../../../components/spoiler'
 import { CodeforcesNav, ProblemSection } from './codeforces-components'
+import { MdxCover as Cover } from '../../../components/mdx-cover'
 
 # Solving One Coding Challenge at a Time: My Codeforces Experience
 
 ## Competitive Programming Meets Daily Discipline
 
-![Codeforces](/codeforces.png)
+<Cover
+  src="/codeforces.png"
+  alt="Codeforces Profile"
+  caption="https://codeforces.com/profile/ciberportero"
+/>
 
 
 Alongside my cybersecurity learning path, I’ve started a parallel challenge: solving [Codeforces problems consistently](https://codeforces.com/submissions/ciberportero), roughly one per day, while also taking [Harvard’s CS50 Python course](https://www.youtube.com/watch?v=nLRL_NcnK-4). The goal isn’t speed or rating (at least not yet), but building strong problem‑solving fundamentals, clean Python habits, and algorithmic thinking that will pay off long term—especially in security, scripting, and automation.
@@ -215,6 +220,94 @@ h, w = map(int, input().split())
 squares = h * w
  
 print(int(squares / 2))
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={7}>
+
+### 7) Beautiful Matrix ([Link](https://codeforces.com/problemset/problem/263/A))
+
+**Topic:** Implementation
+
+We are given a 5x5 matrix with a single '1' and need to calculate the minimum number of moves (swaps) to bring it to the center (3,3). The solution involves finding the coordinates of the '1' and calculating the Manhattan distance to the center.
+
+<Spoiler>
+```python
+matrix = []
+ 
+one_position = tuple()
+ 
+swaps = 0
+ 
+for row in range(5):
+	matrix.append( list( map( int, input().split() ) ) )
+	for column in range(5):
+		if matrix[row][column] == 1:
+			one_position = (column, row)
+ 
+swaps = abs(one_position[0] - 2) + abs(one_position[1] - 2)
+ 
+print(swaps)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={8}>
+
+### 8) Helpful Maths ([Link](https://codeforces.com/problemset/problem/339/A))
+
+**Topic:** Strings and Sorting
+
+We need to reorder a sum of numbers (1, 2, 3) so they are in non-decreasing order. I solved this using a bubble sort algorithm, thanks to the [CS50 algorithms class](https://youtu.be/6Svu_ae5ebk).
+
+<Spoiler>
+```python
+numbers = list( map( int, input().split("+") ) )
+ 
+swaps = -1
+ 
+while(swaps != 0):
+	swaps = 0
+	for i in range(len(numbers)-1):
+		if numbers[i] > numbers[i+1]:
+			aux = numbers[i]
+			numbers[i] = numbers[i+1]
+			numbers[i+1] = aux
+			swaps += 1
+ 
+result = "+".join(list(map(str,numbers)))
+ 
+print(result)
+```
+</Spoiler>
+
+</ProblemSection>
+
+<ProblemSection id={9}>
+
+### 9) Soldier and Bananas ([Link](https://codeforces.com/problemset/problem/546/A))
+
+**Topic:** Math
+
+A soldier wants to buy bananas where the cost increases for each banana. We need to calculate the total cost using an arithmetic series formula (or a loop) and determine how much money he needs to borrow.
+
+<Spoiler>
+```python
+cost, dollars, bananas = map( int, input().split() )
+ 
+total = 0
+borrow = 0
+ 
+for i in range(1, bananas + 1):
+	total += cost * i
+ 
+if(total > dollars):
+	borrow = total - dollars
+ 
+print(borrow)
 ```
 </Spoiler>
 

@@ -17,6 +17,9 @@ export const problems: ProblemData[] = [
     { id: 4, title: 'Bit++', category: 'Implementation' },
     { id: 5, title: 'Next Round', category: 'Arrays' },
     { id: 6, title: 'Domino piling', category: 'Math' },
+    { id: 7, title: 'Beautiful Matrix', category: 'Implementation' },
+    { id: 8, title: 'Helpful Maths', category: 'Strings' },
+    { id: 9, title: 'Soldier and Bananas', category: 'Math' },
 ]
 
 export function CodeforcesNav() {
