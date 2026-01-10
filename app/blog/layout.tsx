@@ -3,6 +3,7 @@ import { TextMorph } from '@/components/ui/text-morph'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
 import { useEffect, useState } from 'react'
 import { BackToTop } from '@/components/BackToTop'
+import { ScrollToBottom } from '@/components/ScrollToBottom'
 
 function CopyButton() {
   const [text, setText] = useState('Copy')
@@ -53,6 +54,7 @@ export default function LayoutBlogPost({
         </main>
       </div>
       <BackToTop />
+      <ScrollToBottom />
     </>
   )
 }

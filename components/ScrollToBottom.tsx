@@ -1,29 +1,34 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { ArrowUp } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'motion/react'
 
-export function BackToTop() {
-    const [isVisible, setIsVisible] = useState(false)
+export function ScrollToBottom() {
+    const [isVisible, setIsVisible] = useState(true)
 
     useEffect(() => {
         const toggleVisibility = () => {
-            if (window.scrollY > 300) {
-                setIsVisible(true)
-            } else {
+            if (
+                window.innerHeight + window.scrollY >=
+                document.documentElement.scrollHeight - 100
+            ) {
                 setIsVisible(false)
+            } else {
+                setIsVisible(true)
             }
         }
 
         window.addEventListener('scroll', toggleVisibility)
+        // Check initial state
+        toggleVisibility()
 
         return () => window.removeEventListener('scroll', toggleVisibility)
     }, [])
 
-    const scrollToTop = () => {
+    const scrollToBottom = () => {
         window.scrollTo({
-            top: 0,
+            top: document.documentElement.scrollHeight,
             behavior: 'smooth',
         })
     }
@@ -36,7 +41,7 @@ export function BackToTop() {
                     animate={{
                         opacity: 1,
                         scale: 1,
-                        y: [0, -8, 0],
+                        y: [0, 8, 0],
                     }}
                     transition={{
                         opacity: { duration: 0.2 },
@@ -49,11 +54,11 @@ export function BackToTop() {
                         },
                     }}
                     exit={{ opacity: 0, scale: 0.8 }}
-                    onClick={scrollToTop}
-                    className="fixed bottom-20 right-8 z-50 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-zinc-900 text-white shadow-lg transition-colors hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
-                    aria-label="Back to top"
+                    onClick={scrollToBottom}
+                    className="fixed bottom-8 right-8 z-50 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-zinc-900 text-white shadow-lg transition-colors hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+                    aria-label="Scroll to bottom"
                 >
-                    <ArrowUp className="h-5 w-5" />
+                    <ArrowDown className="h-5 w-5" />
                 </motion.button>
             )}
         </AnimatePresence>
