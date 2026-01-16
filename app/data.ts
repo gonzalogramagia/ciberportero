@@ -41,6 +41,15 @@ export const PROJECTS_EN: Project[] = [
     github: 'https://github.com/moovimiento/mas',
     id: 'project3',
   },
+  {
+    name: 'Milemojis.com',
+    description:
+      'A minimalist emoji picker designed for speed and accessibility. Developed with a focus on clean architecture, internationalization, and user experience, featuring custom emojis and bilingual support 😎 Tech Stack: React, TypeScript and Tailwind.',
+    link: 'https://milemojis.com/en',
+    image: '/milemojis.png',
+    github: 'https://github.com/gonzalogramagia/milemojis',
+    id: 'project5',
+  },
   // {
   //   name: 'Alianza La Libertad Avanza Córdoba',
   //   description: 'Website for LLA admins and editors to publish resolutions and statements. Built with Nuxt 3, Tailwind CSS, and Nuxt Content.',
@@ -79,6 +88,15 @@ export const PROJECTS_ES: Project[] = [
     image: '/moovimiento-com.png',
     github: 'https://github.com/moovimiento/mas',
     id: 'project3',
+  },
+  {
+    name: 'Milemojis.com',
+    description:
+      'Un buscador de emojis minimalista diseñado para ser veloz y accesible. Construido con un fuerte enfoque en arquitectura limpia, internacionalización y experiencia de usuario, con la posibilidad de sumar emojis personalizados y soporte bilingüe 😎 Construido con React, TypeScript y Tailwind.',
+    link: 'https://milemojis.com',
+    image: '/milemojis.png',
+    github: 'https://github.com/gonzalogramagia/milemojis',
+    id: 'project5',
   },
   // {
   //   name: 'Alianza La Libertad Avanza Córdoba',
