@@ -33,13 +33,13 @@ type SocialLink = {
 
 export const PROJECTS_EN: Project[] = [
   {
-    name: 'Moovimiento.com',
+    name: 'Hoy.today',
     description:
-      'Modern web application that allows users to build custom nut mixes. Developed with a strong focus on security, stability, and best practices, simulating real-world prod environments ⚡ Tech Stack: Built with Next.js, TypeScript, and Tailwind.',
-    link: 'https://mas.moovimiento.com',
-    image: '/moovimiento-com.png',
-    github: 'https://github.com/moovimiento/mas',
-    id: 'project3',
+      'A comprehensive productivity dashboard for managing notes, tasks, countdowns, and custom shortcuts. All data is persisted locally via browser storage, ensuring privacy and speed ⚡ Tech Stack: React, TypeScript and Tailwind.',
+    link: 'https://hoy.today/en',
+    image: '/hoy.today.png',
+    github: 'https://github.com/gonzalogramagia/today',
+    id: 'project_hoy_today',
   },
   {
     name: 'Milemojis.com',
@@ -50,44 +50,35 @@ export const PROJECTS_EN: Project[] = [
     github: 'https://github.com/gonzalogramagia/emojis',
     id: 'project5',
   },
-  // {
-  //   name: 'Alianza La Libertad Avanza Córdoba',
-  //   description: 'Website for LLA admins and editors to publish resolutions and statements. Built with Nuxt 3, Tailwind CSS, and Nuxt Content.',
-  //   link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
-  //   youtube:
-  //     'qX0PC89YqlY',
-  //   github: 'https://github.com/bouchardista/alianza-la-libertad-avanza',
-  //   id: 'project2',
-  // },
   {
     name: 'Entrenar.app',
     description:
       'Originally started as a workout tracking platform for UNC students. The project is built with a strong emphasis on security, reliability, and real-world system design 💪 Tech Stack: Built with Go, React, and Supabase.',
-    link: 'https://entrenar.app/',
+    link: 'https://entrenar.app/en',
     image: '/entrenar-app.png',
     github: 'https://github.com/gonzalogramagia/entrenar',
     id: 'project1',
   },
-  // {
-  //   name: 'Algoritmos1.com',
-  //   description:
-  //     'Academic portal for Algoritmos I students at FAMAF UNC to access resources and exam tools. Built with Astro.js.',
-  //   link: 'https://algoritmos1.com',
-  //   image: '/algoritmos1-com.png',
-  //   github: 'https://github.com/gonzalogramagia/algoritmos',
-  //   id: 'project4',
-  // },
+  {
+    name: 'Moovimiento.com',
+    description:
+      'Modern web application that allows users to build custom nut mixes. Developed with a strong focus on security, stability, and best practices, simulating real-world prod environments ⚡ Tech Stack: Built with Next.js, TypeScript, and Tailwind.',
+    link: 'https://mas.moovimiento.com/en',
+    image: '/moovimiento-com.png',
+    github: 'https://github.com/moovimiento/mas',
+    id: 'project3',
+  },
 ]
 
 export const PROJECTS_ES: Project[] = [
   {
-    name: 'Moovimiento.com',
+    name: 'Hoy.today',
     description:
-      'Aplicación web moderna que permite a los usuarios crear mezclas de frutos secos personalizadas. Desarrollada con un fuerte enfoque en la seguridad, la estabilidad y las mejores prácticas, simulando entornos de producción del mundo real ⚡ Construido con Next.js, TypeScript y Tailwind.',
-    link: 'https://mas.moovimiento.com',
-    image: '/moovimiento-com.png',
-    github: 'https://github.com/moovimiento/mas',
-    id: 'project3',
+      'Un dashboard de productividad integral para gestionar notas, tareas, cuentas regresivas y atajos personalizados. Con emojis listos para usar y soporte bilingüe. Todos los datos se guardan localmente para garantizar privacidad y velocidad ⚡ Construido con React, TypeScript y Tailwind.',
+    link: 'https://hoy.today',
+    image: '/hoy.today.png',
+    github: 'https://github.com/gonzalogramagia/today',
+    id: 'project_hoy_today',
   },
   {
     name: 'Milemojis.com',
@@ -98,15 +89,6 @@ export const PROJECTS_ES: Project[] = [
     github: 'https://github.com/gonzalogramagia/emojis',
     id: 'project5',
   },
-  // {
-  //   name: 'Alianza La Libertad Avanza Córdoba',
-  //   description: 'Sitio web para que administradores y editores de LLA puedan publicar resoluciones y declaraciones. Construido con Nuxt 3, Tailwind CSS y Nuxt Content.',
-  //   link: 'https://www.alianzalalibertadavanzacordoba.com.ar/admin/secure-login/',
-  //   youtube:
-  //     'qX0PC89YqlY',
-  //   github: 'https://github.com/bouchardista/alianza-la-libertad-avanza',
-  //   id: 'project2',
-  // },
   {
     name: 'Entrenar.app',
     description:
@@ -116,15 +98,15 @@ export const PROJECTS_ES: Project[] = [
     github: 'https://github.com/gonzalogramagia/entrenar',
     id: 'project1',
   },
-  // {
-  //   name: 'Algoritmos1.com',
-  //   description:
-  //     'Portal académico para estudiantes de Algoritmos I en FAMAF UNC para acceder a recursos y herramientas de examen. Construido con Astro.js.',
-  //   link: 'https://algoritmos1.com',
-  //   image: '/algoritmos1-com.png',
-  //   github: 'https://github.com/gonzalogramagia/algoritmos',
-  //   id: 'project4',
-  // },
+  {
+    name: 'Moovimiento.com',
+    description:
+      'Aplicación web moderna que permite a los usuarios crear mezclas de frutos secos personalizadas. Desarrollada con un fuerte enfoque en la seguridad, la estabilidad y las mejores prácticas, simulando entornos de producción del mundo real ⚡ Construido con Next.js, TypeScript y Tailwind.',
+    link: 'https://mas.moovimiento.com',
+    image: '/moovimiento-com.png',
+    github: 'https://github.com/moovimiento/mas',
+    id: 'project3',
+  },
 ]
 
 export const WORK_EXPERIENCE_EN: WorkExperience[] = [
