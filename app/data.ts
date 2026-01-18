@@ -256,7 +256,7 @@ export const BLOG_POSTS_EN: BlogPost[] = [
   },
   {
     title: 'Solving One Coding Challenge at a Time: My Codeforces Experience',
-    description: 'A daily journey into competitive programming, algorithms, and Python mastery through Codeforces and CS50.',
+    description: 'A weekend journey into competitive programming as a serious hobby (E-sport).',
     link: '/blog/codeforces-journey',
     uid: 'blog-2',
   },
@@ -272,7 +272,7 @@ export const BLOG_POSTS_ES: BlogPost[] = [
   },
   {
     title: 'Resolviendo Un Desafío de Programación a la Vez: Mi Experiencia en Codeforces',
-    description: 'Un viaje diario hacia la programación competitiva, algoritmos y el dominio de Python a través de Codeforces y CS50.',
+    description: 'Un viaje hacia la programación competitiva como hobby serio y e-sport de fin de semana.',
     link: '/es/blog/codeforces-journey',
     uid: 'blog-2',
   },
